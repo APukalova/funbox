@@ -1,1 +1,2 @@
-# funbox
+# Funbox project
+

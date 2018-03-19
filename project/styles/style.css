@@ -1,0 +1,27 @@
+/*base*/
+
+/* Reset Stylesheet http://html5doctor.com/html-5-reset-stylesheet/ */abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}input,select{vertical-align:middle}
+
+/* ui */input,select,textarea{margin:0}input:focus,select:focus,textarea:focus{outline:none}textarea{overflow:auto}button::-moz-focus-inner,input[type=button]::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]::-moz-focus-inner{padding:0!important;border:0 none!important}
+
+/* link */a{text-decoration:none}
+
+/* hr */hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:0;padding:0}
+
+/* clearfix */.clearfix:after{content:"";display:table;clear:both}
+
+/* hidden */[hidden]{display:none!important}
+
+/* img */img{display:block;max-width:100%}
+
+/* box-sizing */*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/*cosmetic*/
+
+/**/
+
+/*elements*/button{cursor:pointer;display:inline-block;border:0 none;background:none;-webkit-box-shadow:none;box-shadow:none}button:focus{outline:none}.btn{display:block}input{-weblit-appearance:none}
+
+/**/a{color:inherit}
+
+/*blocks*/body,html{height:100%}body{position:relative;min-width:320px;font:14px/1.2 Arial,Helvetica,Nimbus Sans L,sans-serif;color:#000;background-color:#fff;-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
