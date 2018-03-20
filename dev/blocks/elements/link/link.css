@@ -3,3 +3,11 @@
 a {
     color: inherit;
 }
+
+.link {
+
+    &_dashed {
+        color: currentColor;
+        border-bottom: 1px dashed currentColor;
+    }
+}

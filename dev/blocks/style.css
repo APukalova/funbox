@@ -1,11 +1,13 @@
-/*base*/
-
-@import 'base/reset/reset.css';
 
 /*cosmetic*/
 
 @import 'cosmetic/media/media.css';
 @import 'cosmetic/fonts/fonts.css';
+
+/*base*/
+
+@import 'base/container/container.css';
+@import 'base/reset/reset.css';
 
 /*elements*/
 
@@ -16,3 +18,6 @@
 /*blocks*/
 
 @import 'blocks/body/body.css';
+@import 'blocks/page/page.css';
+@import 'blocks/product-item/product-item.css';
+@import 'blocks/product/product.css';

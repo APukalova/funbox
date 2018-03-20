@@ -6,9 +6,9 @@ body {
     position: relative;
     min-width: 320px;
     height: 100%;
-    font: 14px/1.2 $arial;
-    color: black;
-    background-color: white;
+    font: 14px/1.2 $trebuchet;
+    color: #fff;
+    background-color: #fff;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

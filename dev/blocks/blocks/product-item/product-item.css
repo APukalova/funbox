@@ -1,0 +1,188 @@
+$base-color: #1698d9;
+$active-color: #d91667;
+$disabled-color: #b3b3b3;
+
+.product-item {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 36px;
+    padding: 17px 20px 290px 45px;
+    color: #000;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    border: 4px solid $base-color;
+    border-radius: 10px;
+
+    @media $smallPhone {
+        padding-bottom: 196px;
+        background-position: 90% 190%;
+    }
+
+    @supports (-webkit-clip-path: polygon(0 0, 0 0, 0 0)) or (clip-path: polygon(0 0, 0 0, 0 0)) {
+        clip-path: polygon(0 44px, 44px 0, 100% 0, 100% calc(100% + 36px), 0 calc(100% + 36px));
+
+        &:after {
+            content: '';
+            position: absolute -2px * * 38px;
+            size: 4px 60px;
+            background: $base-color;
+            transform: rotate(45deg);
+            transform-origin: top;
+        }
+    }
+
+    .product {
+
+        &-name {
+
+            .title {
+                font-size: 16px;
+                color: #666;
+
+                @media $smallPhone {
+                    font-size: 15px;
+                }
+
+                &_selected {
+                    display: none;
+                    color: $active-color;
+                }
+            }
+
+            .name {
+                margin-top: 9px;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 1;
+
+                @media $smallPhone {
+                    font-size: 42px;
+                }
+
+                &-descr {
+                    display: block;
+                    margin-top: 4px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-bonus {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #666;
+        }
+
+        &-weight {
+            position: absolute * 11px 11px *;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            size: 80px;
+            font-size: 21px;
+            line-height: 1;
+            color: #fff;
+            background: $base-color;
+            border-radius: 50%;
+
+            & .val {
+                font-size: 42px;
+            }
+        }
+
+        &-slogan {
+            cursor: default;
+            position: absolute * 0 -30px 0;
+
+            &__text {
+                font-size: 13px;
+                line-height: 16px;
+                text-align: center;
+                color: #fff;
+                white-space: nowrap;
+
+                .link {
+                    font-weight: 700;
+                    color: #1698d9;
+                }
+
+                &_normal {
+                    display: block;
+                }
+                &_active {
+                    display: none;
+                }
+                &_disabled {
+                    display: none;
+                    color: #ffff66;
+                }
+            }
+        }
+    }
+
+    &._active {
+        border-color: $active-color;
+
+        &:after,
+        .product-weight {
+            background-color: $active-color;
+        }
+
+        .product-slogan__text {
+
+            &_normal {
+                display: none;
+            }
+            &_active {
+                display: block;
+            }
+            &_disabled {
+                display: none;
+            }
+        }
+
+        &._selected:hover {
+
+            .product-name .title_normal {
+                display: none;
+            }
+            .product-name .title_selected {
+                display: block;
+            }
+        }
+    }
+
+    &._disabled {
+
+        cursor: default;
+        border-color: $disabled-color;
+
+        &:after,
+        .product-weight {
+            background-color: $disabled-color;
+        }
+
+        .product-name .title,
+        .product-name .name,
+        .product-bonus {
+            opacity: .5;
+            color: $disabled-color;
+        }
+
+        .product-slogan__text {
+
+            &_normal {
+                display: none;
+            }
+            &_active {
+                display: none;
+            }
+            &_disabled {
+                display: block;
+            }
+        }
+    }
+}
